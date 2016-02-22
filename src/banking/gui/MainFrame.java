@@ -13,19 +13,19 @@ import javax.swing.*;
 
 @SuppressWarnings("serial")
 class MainFrame extends JFrame {
-	AccountServer	myServer;
-	Properties		props;
-	JLabel			typeLabel;
-	JLabel			nameLabel;
-	JLabel			balanceLabel;
-	JComboBox		typeOptions;
-	JTextField		nameField;
-	JTextField		balanceField;
-	JButton 		depositButton;
-	JButton 		withdrawButton;
-	JButton			newAccountButton;
-	JButton			displayAccountsButton;
-	JButton			displayODAccountsButton;
+	private AccountServer	myServer;
+	private Properties		props;
+	private JLabel			typeLabel;
+	private JLabel			nameLabel;
+	private JLabel			balanceLabel;
+	private JComboBox		typeOptions;
+	private JTextField		nameField;
+	private JTextField		balanceField;
+	private JButton 		depositButton;
+	private JButton 		withdrawButton;
+	private JButton			newAccountButton;
+	private JButton			displayAccountsButton;
+	private JButton			displayODAccountsButton;
 
 	public MainFrame(String propertyFile) throws IOException {
 
