@@ -2,7 +2,7 @@ package banking.primitive.core;
 
 public class Checking extends Account {
 	//qbecker issue #5 fix
-	private static final long SerialVersionUID = 11L;
+	private static final long SERIALVERSIONUID = 11L;
 	private int numWithdraws = 0;
 	
 	private Checking(String name) {
