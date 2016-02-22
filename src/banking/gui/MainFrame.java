@@ -15,17 +15,10 @@ import javax.swing.*;
 class MainFrame extends JFrame {
 	private AccountServer	myServer;
 	private Properties		props;
-	private JLabel			typeLabel;
-	private JLabel			nameLabel;
-	private JLabel			balanceLabel;
+	private JLabel			typeLabel, nameLabel, balanceLabel;
 	private JComboBox		typeOptions;
-	private JTextField		nameField;
-	private JTextField		balanceField;
-	private JButton 		depositButton;
-	private JButton 		withdrawButton;
-	private JButton			newAccountButton;
-	private JButton			displayAccountsButton;
-	private JButton			displayODAccountsButton;
+	private JTextField		nameField, balanceField;
+	private JButton 		depositButton, withdrawButton, newAccountButton, displayAccountsButton, displayODAccountsButton;
 
 	public MainFrame(String propertyFile) throws IOException {
 
