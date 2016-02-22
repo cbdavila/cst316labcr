@@ -37,8 +37,8 @@ public class Savings extends Account {
 			numWithdraws++;
 			if (numWithdraws > 3)
 				balance = balance - 1.0f;
-			// KG BVA: should be < 0
-			if (balance <= 0.0f) {
+			// QB #7 fix
+			if (balance < 0.0f) {
 				setState(State.OVERDRAWN);
 			}
 			return true;
@@ -46,7 +46,7 @@ public class Savings extends Account {
 		return false;
 	}
 	
-	public String getType() { return "Checking"; }
+	public String getType() { return "Savings"; }
 
 	public String toString() {
 		return "Savings: " + getName() + ": " + getBalance();
